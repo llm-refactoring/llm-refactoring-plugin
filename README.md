@@ -50,6 +50,8 @@ refactoring.
 
 # Datasets
 
+Datasets are accessible via the provided [link](https://github.com/llm-refactoring/llm-refactoring-plugin/tree/main/datasets).
+
 To validate our technique, we used the following datasets:
 
 1. _Community Corpus-A_ consists of **122** Java methods and their corresponding Extract Method refactorings collected
