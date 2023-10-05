@@ -11,6 +11,7 @@ This repository contains an archive with IntelliJ IDEA plugin, installation and 
 - [Plugin installation](#plugin-installation)
 - [Usage example](#usage-example)
 - [Datasets](#datasets)
+- [Developer Survey](#developer-survey)
 
 ## Overview
 
