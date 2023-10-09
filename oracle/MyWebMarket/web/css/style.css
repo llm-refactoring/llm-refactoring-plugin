@@ -1,0 +1,224 @@
+
+/*
+Design by Best Web Host
+http://www.100webhosting.com
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+
+
+*{
+	margin: 0em;
+	padding: 0em;
+}
+
+h1,h2 {
+}
+
+a {
+	color: #a43726;
+}
+
+a:hover {
+	color: #a46126;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 11pt;
+	background: #fff;
+	color: #665555;
+}
+
+#outer {
+	margin: 0em auto 1em auto;
+	width: 100%;
+	background-color: #fff;
+}
+
+#header {
+	padding: 1.5em 2em 1.5em 4em;
+	background: #2E2017 url('images/header.jpg') top left repeat-x;
+}
+
+#header h1 {
+	font-size: 2.2em;
+}
+
+#header h1, #header h2 {
+	display: block;
+	width: 778px;
+	margin: 0em auto;
+}
+
+#header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header h2 {
+	color: #bbaa77;
+	font-size: 1.1em;
+}
+
+#menu {
+	padding: 1em 2em 1em 0em;
+	background: #F1DFC9 url('images/menu.gif') top left repeat-x;
+	font-size: 0.9em;
+	height: 27px;
+}
+
+#menu ul {
+	display: block;
+	width: 778px;
+	margin: 0em auto;
+	list-style: none;
+	padding-left: 2.5em;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu li a {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 0.25em 0.75em 0.25em 0.75em;
+}
+
+#menu li a:hover {
+	background: #342117 url('images/hover.gif') top left repeat-x;
+	color: #fffdc6;
+}
+
+#content {
+	width: 778px;
+	margin: 0em auto;
+}
+
+#content p {
+	margin-bottom: 1.5em;
+	text-align: justify;
+}
+
+#content h2,h3,h4,h5,h6 {
+	color: #353e49;
+	margin-bottom: 1em;
+}
+
+#content ul {
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+}
+
+#content blockquote {
+	padding-left: 1em;
+	margin-bottom: 1.5em;
+	border-left: solid 7px #b8c2cd;
+}
+
+#content blockquote p {
+	margin-bottom: 0em;
+}
+
+#mainContentContainer {
+	float: left;
+	margin-left: -17em;
+	width: 100%;
+}
+
+#mainContent {
+	margin: 0em 0em 0em 16.5em;
+	padding: 1.5em;
+}
+
+#mainContent h2, #mainContent h3 {
+	padding-bottom: 0.25em;
+	margin-bottom: 1.25em;
+	display: block; background: url(images/title-bottom.gif) repeat-x bottom;
+}
+
+#mainContent h2 {
+	font-size: 1.7em;
+}
+
+#mainContent h3 {
+	font-size: 1.2em;
+}
+
+#sidebar {
+	float: right;
+	width: 14em;
+	padding: 1.5em 2em 1.5em 2em;
+	font-size: 0.9em;
+}
+
+#sidebar h3 {
+	background: #ffffff url('images/sidebar-header.gif') top left no-repeat;
+	height: 34px;
+	color: #fff;
+	padding: 0.5em 0.5em 0em 1.0em;
+	position: relative;
+	left: -0.8em;
+	margin-right: -1.6em;
+	font-size: 1.1em;
+}
+
+#footer {
+	padding: 1.5em 2em 1.5em 2em;
+	text-align: center;
+	width: 778px;
+	margin: 0em auto;
+	border-top: solid 1px #efeecc;
+	font-size: 0.9em;
+}
+
+.clear {
+	clear: both;
+}
+
+table{
+  border: 0px solid black;
+  border-spacing: 0px;
+}
+
+table thead tr{
+  font-size: 16px;
+}
+
+table thead tr th{
+  border-bottom: 0px solid black;
+  border-top: 0px solid black;
+  margin: 0px;
+  padding: 2px;
+  background-color: #cccccc;
+}
+
+table tr {
+  font-size:14px;
+  background-color: white;
+}
+
+table tr.odd {
+  background-color: #AAAAAA;
+}
+
+table tr td, th{
+  border-bottom: 0px solid black;
+  padding: 2px;
+  text-align: left;
+  min-width: 70px;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+
+span.errorMessage{
+  color: red;
+  font-size: 12px;
+}

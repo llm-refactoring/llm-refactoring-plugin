@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="pages" namespace="/" extends="struts-default">
+
+		<interceptors>
+
+			<interceptor name="authentication" class="classes.AuthenticationInterceptor" />
+
+			<interceptor-stack name="user">
+				<interceptor-ref name="authentication" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+
+			<interceptor-stack name="guest">
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+
+		</interceptors>
+
+		<default-interceptor-ref name="user" />
+
+		<global-results>
+			<result name="error">/Error.jsp</result>
+			<result name="login" type="redirectAction">Login_input</result>
+		</global-results>
+
+		<action name="Login_*" method="{1}" class="classes.LoginAction">
+			<result name="input">/Login.jsp</result>
+			<result type="redirectAction">Menu</result>
+			<interceptor-ref name="guest">
+				<param name="defaultStack.validation.excludeMethods">logoff,input</param>
+			</interceptor-ref>
+		</action>
+
+		<action name="Product_*" method="{1}" class="classes.ProductAction">
+			<interceptor-ref name="user">
+				<param name="defaultStack.validation.excludeMethods">find,input,edit,execute</param>
+			</interceptor-ref>
+			<result name="input">/Product.jsp</result>
+		</action>
+
+		<action name="PurchaseOrder_*" method="{1}"
+			class="classes.PurchaseOrderAction">
+			<interceptor-ref name="user">
+				<param name="defaultStack.validation.excludeMethods">find,input,edit,execute</param>
+			</interceptor-ref>
+			<result name="input">/PurchaseOrder.jsp</result>
+		</action>
+
+		<action name="Customer_*" method="{1}" class="classes.CustomerAction">
+			<interceptor-ref name="user">
+				<param name="defaultStack.validation.excludeMethods">find,input,edit,execute</param>
+			</interceptor-ref>
+			<result name="input">/Customer.jsp</result>
+		</action>
+
+		<action name="Report_*" method="{1}" class="classes.ReportAction">
+			<interceptor-ref name="user">
+				<param name="defaultStack.validation.excludeMethods">input,report</param>
+			</interceptor-ref>
+			<result name="input">/Report.jsp</result>
+			<result name="download" type="stream">
+				<param name="contentDisposition">attachment;filename=report.pdf</param>
+				<param name="contentType">application/force-download</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+
+		<action name="Scheduler_*" method="{1}" class="classes.SchedulerAction">
+			<interceptor-ref name="user">			
+				<param name="defaultStack.validation.excludeMethods">input,execute</param>
+			</interceptor-ref>
+			<result name="input">/Scheduler.jsp</result>
+		</action>
+
+		<action name="index.jsp" class="classes.ExampleSupport">
+			<result>/index.jsp</result>
+		</action>
+
+		<action name="*" class="classes.ExampleSupport">
+			<result>/{1}.jsp</result>
+			<interceptor-ref name="user" />
+		</action>
+		<!-- Add actions here -->
+	</package>
+</struts>

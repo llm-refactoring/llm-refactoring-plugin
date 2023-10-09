@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">jdbc:mysql://localhost:3306/terramarket?profileSQL=true</property>
+		<property name="connection.username">root</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="connection.password">root</property>
+		
+		<!-- this will show us all sql statements -->
+		<property name="hibernate.show_sql">true</property>
+		
+		<!-- mapping classes -->
+		<mapping class="classes.Product"/>
+		<mapping class="classes.Customer"/>
+		<mapping class="classes.User"/>
+		<mapping class="classes.PurchaseOrder"/>
+		<mapping class="classes.PurchaseOrderItem"/>
+	</session-factory>
+</hibernate-configuration>

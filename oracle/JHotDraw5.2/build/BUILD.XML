@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<project name="JHotDraw" default="main" basedir=".">
+
+  <property name="build.classes" value="${dest.dir}"/>
+  <property name="build.jar" value="jhotdraw.jar"/>
+
+  <property name="src.dir" value="${dest.dir}/sources"/>
+  <property name="images.dir" value="CH/ifa/draw/images"/>
+  <property name="javadraw.images.dir" value="CH/ifa/draw/samples/javadraw/sampleimages"/>
+  <property name="pert.images.dir" value="CH/ifa/draw/samples/pert/images"/>
+ 
+  <property name="javadoc.dir" value="${dest.dir}/javadoc"/>
+
+  <property name="javac.deprecation" value="off"/>
+  <property name="javac.includes" value="**/*.java"/>
+
+  <!-- Give user a chance to override without editing this file 
+       (and without typing -D each time it compiles it -->
+  <property file="${user.home}/.ant.properties" />
+
+  <!-- =================================================================== -->
+  <!-- Builds a complete package with all files from scratch               -->
+  <!-- =================================================================== -->
+  <target name="all" depends="clean, main, javadocs">
+  </target>
+  
+  <!-- =================================================================== -->
+  <!-- Builds a package with all essential files                           -->
+  <!-- =================================================================== -->
+  <target name="main" depends="compile, copyResources, jar">
+  </target>
+  
+  <!-- =================================================================== -->
+  <!-- Compiles the source code                                            -->
+  <!-- =================================================================== -->
+  <target name="compile">
+    <javac srcdir="${src.dir}"
+           destdir="${build.classes}"
+           debug="${javac.debug}"
+           deprecation="${javac.deprecation}"
+		   includes="${javac.includes}"
+           optimize="${javac.optimize}" >
+    </javac>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Generates JavaDoc                                                   -->
+  <!-- =================================================================== -->
+  <target name="javadocs">
+    <mkdir dir="${javadoc.dir}"/>
+    <javadoc sourcepath="${src.dir}"
+      destdir="${javadoc.dir}"
+      classpath="${dest.dir}"
+      author="false"
+      version="true"
+      packagenames="CH.*"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Copies the resources into the build target directory                -->
+  <!-- Resources are non-code that needs to be packed into some jar file   -->
+  <!-- in their package structure, such as .gif, .properties, .html, etc.  -->
+  <!-- =================================================================== -->
+  <target name="copyResources">
+    <copy toDir="${dest.dir}">
+      <fileset dir="${src.dir}">
+         <include name ="**/*.gif" />
+         <include name ="**/*.html" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Cleans up generated stuff                                           -->
+  <!-- =================================================================== -->
+  <target name="clean">
+    <delete dir="${dest.dir}/CH"/>
+    <delete dir="${javadoc.dir}"/>
+    <delete file="${dest.dir}/${build.jar}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- The next section defines the Jar file layout.                       -->
+  <!-- =================================================================== -->
+  <target name="jar" depends="compile, copyResources">
+    <jar jarfile="${dest.dir}/${build.jar}"
+         basedir="${build.classes}"
+         includes="
+           CH/**
+           "
+        >
+	</jar>
+  </target>
+
+</project>

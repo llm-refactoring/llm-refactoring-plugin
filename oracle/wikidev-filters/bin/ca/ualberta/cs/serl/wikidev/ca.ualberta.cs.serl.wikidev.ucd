@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="5035,4075" id="ca.ualberta.cs.serl.wikidev" metadata="uml2-1.0" initialized="true" zoom="0.25" scrolledY="189" tag="10" key="32303037303533312D31302077696B696465762D66696C74657273">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.3 //@children.4/@sourceConnections.0" name="DataManager" location="2581,2392" size="238,715" id="ca.ualberta.cs.serl.wikidev/DataManager" runTimeClassModel="users,getChangeSetDetailsByRevAndProject(II),usernames,openTheConnection(),getUserByID(I),getProjectByExternalSystem(I),DataManager(),getUserByUserName(Ljava.lang.String;),writeCluster(Lca.ualberta.cs.serl.wikidev.Cluster;),getProjectByName(Ljava.lang.String;),getTicketChangesByTicketID(I),projectIDs,allArtifacts,artifactURLs,changesets,writeClusterPerProject(IIILjava.lang.String;Ljava.lang.String;),tickets,getTicketByDrID(II),classes,ticketids,systems,classNames,getProjectByID(I),writeUserInCluster(Lca.ualberta.cs.serl.wikidev.Cluster;),writeArtifactInCluster(Lca.ualberta.cs.serl.wikidev.Cluster;),getAllUsers(),openTheConnection(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),projects,getArtifactsForProject(I),closeTheConnection(),getClusterID(Lca.ualberta.cs.serl.wikidev.Cluster;),getAllProjects(),getAllChangesetsForProject(I),userIDs,getArtifactsAfterTimestamp(Ljava.lang.String;),getExternalSystemByProjectID(I),getArtifactsBetweenDates(Ljava.lang.String;Ljava.lang.String;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="190,234">
+      <children xsi:type="editmodel:AttributeEditModel" name="allArtifacts" id="ca.ualberta.cs.serl.wikidev/DataManager#allArtifacts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="artifactURLs" id="ca.ualberta.cs.serl.wikidev/DataManager#artifactURLs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="changesets" id="ca.ualberta.cs.serl.wikidev/DataManager#changesets"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="classNames" id="ca.ualberta.cs.serl.wikidev/DataManager#classNames"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="classes" id="ca.ualberta.cs.serl.wikidev/DataManager#classes"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="projectIDs" id="ca.ualberta.cs.serl.wikidev/DataManager#projectIDs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="projects" id="ca.ualberta.cs.serl.wikidev/DataManager#projects"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="systems" id="ca.ualberta.cs.serl.wikidev/DataManager#systems"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ticketids" id="ca.ualberta.cs.serl.wikidev/DataManager#ticketids"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tickets" id="ca.ualberta.cs.serl.wikidev/DataManager#tickets"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="userIDs" id="ca.ualberta.cs.serl.wikidev/DataManager#userIDs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="usernames" id="ca.ualberta.cs.serl.wikidev/DataManager#usernames"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="users" id="ca.ualberta.cs.serl.wikidev/DataManager#users"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="215,432">
+      <children xsi:type="editmodel:MethodEditModel" name="DataManager" id="ca.ualberta.cs.serl.wikidev/DataManager#DataManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="closeTheConnection" id="ca.ualberta.cs.serl.wikidev/DataManager#closeTheConnection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllChangesetsForProject" id="ca.ualberta.cs.serl.wikidev/DataManager#getAllChangesetsForProject(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllProjects" id="ca.ualberta.cs.serl.wikidev/DataManager#getAllProjects()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllUsers" id="ca.ualberta.cs.serl.wikidev/DataManager#getAllUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getArtifactsAfterTimestamp" id="ca.ualberta.cs.serl.wikidev/DataManager#getArtifactsAfterTimestamp(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getArtifactsBetweenDates" id="ca.ualberta.cs.serl.wikidev/DataManager#getArtifactsBetweenDates(Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getArtifactsForProject" id="ca.ualberta.cs.serl.wikidev/DataManager#getArtifactsForProject(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChangeSetDetailsByRevAndProject" id="ca.ualberta.cs.serl.wikidev/DataManager#getChangeSetDetailsByRevAndProject(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClusterID" id="ca.ualberta.cs.serl.wikidev/DataManager#getClusterID(Lca.ualberta.cs.serl.wikidev.Cluster;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExternalSystemByProjectID" id="ca.ualberta.cs.serl.wikidev/DataManager#getExternalSystemByProjectID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProjectByExternalSystem" id="ca.ualberta.cs.serl.wikidev/DataManager#getProjectByExternalSystem(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProjectByID" id="ca.ualberta.cs.serl.wikidev/DataManager#getProjectByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProjectByName" id="ca.ualberta.cs.serl.wikidev/DataManager#getProjectByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTicketByDrID" id="ca.ualberta.cs.serl.wikidev/DataManager#getTicketByDrID(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTicketChangesByTicketID" id="ca.ualberta.cs.serl.wikidev/DataManager#getTicketChangesByTicketID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserByID" id="ca.ualberta.cs.serl.wikidev/DataManager#getUserByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserByUserName" id="ca.ualberta.cs.serl.wikidev/DataManager#getUserByUserName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="openTheConnection" id="ca.ualberta.cs.serl.wikidev/DataManager#openTheConnection(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="openTheConnection" id="ca.ualberta.cs.serl.wikidev/DataManager#openTheConnection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeArtifactInCluster" id="ca.ualberta.cs.serl.wikidev/DataManager#writeArtifactInCluster(Lca.ualberta.cs.serl.wikidev.Cluster;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeCluster" id="ca.ualberta.cs.serl.wikidev/DataManager#writeCluster(Lca.ualberta.cs.serl.wikidev.Cluster;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeClusterPerProject" id="ca.ualberta.cs.serl.wikidev/DataManager#writeClusterPerProject(IIILjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeUserInCluster" id="ca.ualberta.cs.serl.wikidev/DataManager#writeUserInCluster(Lca.ualberta.cs.serl.wikidev.Cluster;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Message*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev.artifacts/Message*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Message" source="//@children.0" target="//@children.15" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,22" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,275"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev/Cluster*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Cluster" source="//@children.0" target="//@children.12" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,479" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,54"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev/QueryBuilder" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.2/@children.2" label="//@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,497" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="251,191"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev/User*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/User*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.0" target="//@children.9" targetEnd="//@children.0/@sourceConnections.3/@children.2" label="//@children.0/@sourceConnections.3/@children.0" sourceEnd="//@children.0/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,239"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Wiki*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev.artifacts/Wiki*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Wiki" source="//@children.0" target="//@children.18" targetEnd="//@children.0/@sourceConnections.4/@children.2" label="//@children.0/@sourceConnections.4/@children.0" sourceEnd="//@children.0/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,304" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,167"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev/Project*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/Project*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Project" source="//@children.0" target="//@children.5" targetEnd="//@children.0/@sourceConnections.5/@children.2" label="//@children.0/@sourceConnections.5/@children.0" sourceEnd="//@children.0/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,119" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,393"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Ticket*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev.artifacts/Ticket*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Ticket" source="//@children.0" target="//@children.19" targetEnd="//@children.0/@sourceConnections.6/@children.2" label="//@children.0/@sourceConnections.6/@children.0" sourceEnd="//@children.0/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,129" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,382"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet*ca.ualberta.cs.serl.wikidev/DataManager-Standard::Instantiate->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet*ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" source="//@children.0" target="//@children.17" targetEnd="//@children.0/@sourceConnections.7/@children.2" label="//@children.0/@sourceConnections.7/@children.0" sourceEnd="//@children.0/@sourceConnections.7/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,22" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,275"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/DataManager-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.0" target="//@children.16" targetEnd="//@children.0/@sourceConnections.8/@children.2" label="//@children.0/@sourceConnections.8/@children.0" sourceEnd="//@children.0/@sourceConnections.8/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,295" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,169"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1 //@children.4/@sourceConnections.4 //@children.10/@sourceConnections.1" name="Dictionary" location="1104,2241" size="175,265" id="ca.ualberta.cs.serl.wikidev/Dictionary" runTimeClassModel="gLOBAL_SVN,gLOBAL_TICKET,gLOBAL_WIKI,matchesPattern(Ljava.lang.String;Ljava.lang.String;),getMatchedString(Ljava.util.Collection;Ljava.lang.String;),gLOBAL_CLASS,getUnionPatternOfStrings(Ljava.util.ArrayList;),getDataBaseTable(Ljava.lang.String;),matchesWord(Ljava.lang.String;Ljava.lang.String;),concatStrings(Ljava.util.Collection;),gLOBAL_MAIL,gLOBAL_SRC">
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_CLASS" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_CLASS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_MAIL" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_MAIL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_SRC" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_SRC"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_SVN" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_SVN"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_TICKET" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_TICKET"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gLOBAL_WIKI" id="ca.ualberta.cs.serl.wikidev/Dictionary#gLOBAL_WIKI"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,108">
+      <children xsi:type="editmodel:MethodEditModel" name="concatStrings" id="ca.ualberta.cs.serl.wikidev/Dictionary#concatStrings(Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDataBaseTable" id="ca.ualberta.cs.serl.wikidev/Dictionary#getDataBaseTable(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMatchedString" id="ca.ualberta.cs.serl.wikidev/Dictionary#getMatchedString(Ljava.util.Collection;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUnionPatternOfStrings" id="ca.ualberta.cs.serl.wikidev/Dictionary#getUnionPatternOfStrings(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="matchesPattern" id="ca.ualberta.cs.serl.wikidev/Dictionary#matchesPattern(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="matchesWord" id="ca.ualberta.cs.serl.wikidev/Dictionary#matchesWord(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Main" location="2548,3163" size="75,67" id="ca.ualberta.cs.serl.wikidev/Main" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="ca.ualberta.cs.serl.wikidev/Main#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Main-Standard::Call->ca.ualberta.cs.serl.wikidev/Cluster*ca.ualberta.cs.serl.wikidev/Main-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Cluster" source="//@children.2" target="//@children.12" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="75,44" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,111"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Main-Standard::Call->ca.ualberta.cs.serl.wikidev/RelationshipMiner*ca.ualberta.cs.serl.wikidev/Main-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/RelationshipMiner*ca.ualberta.cs.serl.wikidev/Main-Soyatec::Import->ca.ualberta.cs.serl.wikidev/RelationshipMiner" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="32,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,211"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Main-Standard::Call->ca.ualberta.cs.serl.wikidev/Clustering*ca.ualberta.cs.serl.wikidev/Main-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Clustering" source="//@children.2" target="//@children.14" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="75,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Main-Standard::Call->ca.ualberta.cs.serl.wikidev/DataManager" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.3/@children.2" label="//@children.2/@sourceConnections.3/@children.0" sourceEnd="//@children.2/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,715"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.2" name="QueryBuilder" location="1753,3376" size="251,679" id="ca.ualberta.cs.serl.wikidev/QueryBuilder" runTimeClassModel="selectChangeSetDetailByRevAndProject(II),selectTicketByDrID(II),selectRevisionTextByRevisionID(I),insertIntoClusters(Lca.ualberta.cs.serl.wikidev.Cluster;Ljava.lang.String;),selectAllChangesetsForProject(I),insertArtifactInCluster(Ljava.lang.String;ILjava.lang.String;I),selectProjectUsers(I),selectCommunicationParticipants(I),selectUserAliases(I),selectClusterID(Lca.ualberta.cs.serl.wikidev.Cluster;Ljava.lang.String;),selectTicketChangesByTicketID(I),selectSourceClassEditors(I),selectUserByID(I),selectUserByUserName(Ljava.lang.String;),selectSourceClassByID(I),insertClusterPerProject(ILjava.lang.String;Ljava.lang.String;Ljava.lang.String;I),insertUserInCluster(Ljava.lang.String;I),selectProjectSourceClasses(I),selectProjectRoles(I),selectProjectNamespaceByNamespaceID(I),selectProjectNamespaceIDbyNamespace(Ljava.lang.String;),selectArtifactsAfterTimestamp(Ljava.lang.String;Ljava.lang.String;),selectUserByExternalUserName(Ljava.lang.String;),selectArtifactByURL(Ljava.lang.String;Ljava.lang.String;),selectArtifactsForProjectBetweenDates(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;II),selectProjectNamespaceByID(I),selectSourceClassByName(Ljava.lang.String;),selectArtifactsForProject(Ljava.lang.String;I),selectExternalSystemByProjectID(I),selectRevisionsByWikiID(I),selectProjectByName(Ljava.lang.String;),sELECT_ALL_USERS,selectProjectIDByExternalSystem(I),selectProjectByID(I),sELECT_ALL_PROJECTS">
+    <children xsi:type="editmodel:CompartmentEditModel" size="175,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="sELECT_ALL_PROJECTS" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#sELECT_ALL_PROJECTS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sELECT_ALL_USERS" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#sELECT_ALL_USERS"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="228,594">
+      <children xsi:type="editmodel:MethodEditModel" name="insertArtifactInCluster" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#insertArtifactInCluster(Ljava.lang.String;ILjava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertClusterPerProject" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#insertClusterPerProject(ILjava.lang.String;Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertIntoClusters" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#insertIntoClusters(Lca.ualberta.cs.serl.wikidev.Cluster;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertUserInCluster" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#insertUserInCluster(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectAllChangesetsForProject" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectAllChangesetsForProject(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectArtifactByURL" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectArtifactByURL(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectArtifactsAfterTimestamp" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectArtifactsAfterTimestamp(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectArtifactsForProject" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectArtifactsForProject(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectArtifactsForProjectBetweenDates" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectArtifactsForProjectBetweenDates(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectChangeSetDetailByRevAndProject" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectChangeSetDetailByRevAndProject(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectClusterID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectClusterID(Lca.ualberta.cs.serl.wikidev.Cluster;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectCommunicationParticipants" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectCommunicationParticipants(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectExternalSystemByProjectID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectExternalSystemByProjectID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectByID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectByName" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectIDByExternalSystem" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectIDByExternalSystem(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectNamespaceByID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectNamespaceByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectNamespaceByNamespaceID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectNamespaceByNamespaceID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectNamespaceIDbyNamespace" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectNamespaceIDbyNamespace(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectRoles" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectRoles(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectSourceClasses" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectSourceClasses(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectProjectUsers" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectProjectUsers(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectRevisionTextByRevisionID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectRevisionTextByRevisionID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectRevisionsByWikiID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectRevisionsByWikiID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectSourceClassByID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectSourceClassByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectSourceClassByName" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectSourceClassByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectSourceClassEditors" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectSourceClassEditors(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectTicketByDrID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectTicketByDrID(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectTicketChangesByTicketID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectTicketChangesByTicketID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectUserAliases" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectUserAliases(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectUserByExternalUserName" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectUserByExternalUserName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectUserByID" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectUserByID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="selectUserByUserName" id="ca.ualberta.cs.serl.wikidev/QueryBuilder#selectUserByUserName(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/QueryBuilder-Standard::Call->ca.ualberta.cs.serl.wikidev/Cluster*ca.ualberta.cs.serl.wikidev/QueryBuilder-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Cluster" source="//@children.3" target="//@children.12" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="251,81" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,183"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/QueryBuilder-Standard::Call->ca.ualberta.cs.serl.wikidev/Dictionary" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,95" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,265"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.1 //@children.16/@sourceConnections.2 //@children.11/@sourceConnections.0 //@children.2/@sourceConnections.1 //@children.5/@sourceConnections.6 //@children.9/@sourceConnections.0" name="RelationshipMiner" location="2263,1582" size="191,211" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner" runTimeClassModel="getRelationships(),printResults(I),relateChangeSetToTicket(Lca.ualberta.cs.serl.wikidev.artifacts.ChangeSet;),mineRelationshipsFromText(Ljava.util.TreeMap;),getSimilarityMap(),getDistanceMatrix(),RelationshipMiner(Ljava.util.ArrayList;),getSimilarityMatrix(),projectsChanged">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="projectsChanged" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#projectsChanged"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,144">
+      <children xsi:type="editmodel:MethodEditModel" name="RelationshipMiner" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#RelationshipMiner(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDistanceMatrix" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#getDistanceMatrix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRelationships" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#getRelationships()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSimilarityMap" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#getSimilarityMap()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSimilarityMatrix" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#getSimilarityMatrix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mineRelationshipsFromText" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#mineRelationshipsFromText(Ljava.util.TreeMap;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printResults" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#printResults(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="relateChangeSetToTicket" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner#relateChangeSetToTicket(Lca.ualberta.cs.serl.wikidev.artifacts.ChangeSet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/DataManager" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,211" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="4,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Message*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Message" source="//@children.4" target="//@children.15" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,131" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,127"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/Document*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/Document*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Document" source="//@children.4" target="//@children.11" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="131,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="29,139"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/User*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.4" target="//@children.9" targetEnd="//@children.4/@sourceConnections.3/@children.2" label="//@children.4/@sourceConnections.3/@children.0" sourceEnd="//@children.4/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,201" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/Dictionary" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.4/@children.2" label="//@children.4/@sourceConnections.4/@children.0" sourceEnd="//@children.4/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,161" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="175,80"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Wiki*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Wiki" source="//@children.4" target="//@children.18" targetEnd="//@children.4/@sourceConnections.5/@children.2" label="//@children.4/@sourceConnections.5/@children.0" sourceEnd="//@children.4/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,143" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,80"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/TextParser*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/TextParser*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev/TextParser" source="//@children.4" target="//@children.10" targetEnd="//@children.4/@sourceConnections.6/@children.2" label="//@children.4/@sourceConnections.6/@children.0" sourceEnd="//@children.4/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,62" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,128"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/Project*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Project" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.7/@children.2" label="//@children.4/@sourceConnections.7/@children.0" sourceEnd="//@children.4/@sourceConnections.7/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,26" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,436"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev/MatrixOperator" source="//@children.4" target="//@children.8" targetEnd="//@children.4/@sourceConnections.8/@children.2" label="//@children.4/@sourceConnections.8/@children.0" sourceEnd="//@children.4/@sourceConnections.8/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="25,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,535"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Ticket*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Ticket" source="//@children.4" target="//@children.19" targetEnd="//@children.4/@sourceConnections.9/@children.2" label="//@children.4/@sourceConnections.9/@children.0" sourceEnd="//@children.4/@sourceConnections.9/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,139" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,214"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" source="//@children.4" target="//@children.17" targetEnd="//@children.4/@sourceConnections.10/@children.2" label="//@children.4/@sourceConnections.10/@children.0" sourceEnd="//@children.4/@sourceConnections.10/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,139" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,101"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/RelationshipMiner-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev/RelationshipMiner-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.4" target="//@children.16" targetEnd="//@children.4/@sourceConnections.11/@children.2" label="//@children.4/@sourceConnections.11/@children.0" sourceEnd="//@children.4/@sourceConnections.11/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="161,211" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,47"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.0 //@children.16/@sourceConnections.5 //@children.0/@sourceConnections.5 //@children.18/@sourceConnections.0 //@children.9/@sourceConnections.2 //@children.4/@sourceConnections.7" name="Project" location="3291,1172" size="163,463" id="ca.ualberta.cs.serl.wikidev/Project" runTimeClassModel="setTickets(Ljava.util.Set;),getWikis(),classNames,addManager(Lca.ualberta.cs.serl.wikidev.User;),toString(),setMessages(Ljava.util.Set;),addDeveloper(Lca.ualberta.cs.serl.wikidev.User;),getMessages(),system,projectID,addRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),setWikis(Ljava.util.Set;),compareTo(Lca.ualberta.cs.serl.wikidev.Project;),Project(ILjava.lang.String;),addWiki(Lca.ualberta.cs.serl.wikidev.artifacts.Wiki;),addUser(Lca.ualberta.cs.serl.wikidev.User;),addChangeset(Lca.ualberta.cs.serl.wikidev.artifacts.ChangeSet;),getChangesets(),setChangesets(Ljava.util.Set;),projectName,addMessage(Lca.ualberta.cs.serl.wikidev.artifacts.Message;),addTicket(Lca.ualberta.cs.serl.wikidev.artifacts.Ticket;),getTickets()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="classNames" id="ca.ualberta.cs.serl.wikidev/Project#classNames"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="projectID" id="ca.ualberta.cs.serl.wikidev/Project#projectID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="projectName" id="ca.ualberta.cs.serl.wikidev/Project#projectName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="system" id="ca.ualberta.cs.serl.wikidev/Project#system"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,342">
+      <children xsi:type="editmodel:MethodEditModel" name="Project" id="ca.ualberta.cs.serl.wikidev/Project#Project(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addChangeset" id="ca.ualberta.cs.serl.wikidev/Project#addChangeset(Lca.ualberta.cs.serl.wikidev.artifacts.ChangeSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addDeveloper" id="ca.ualberta.cs.serl.wikidev/Project#addDeveloper(Lca.ualberta.cs.serl.wikidev.User;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addManager" id="ca.ualberta.cs.serl.wikidev/Project#addManager(Lca.ualberta.cs.serl.wikidev.User;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addMessage" id="ca.ualberta.cs.serl.wikidev/Project#addMessage(Lca.ualberta.cs.serl.wikidev.artifacts.Message;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addRelatedArtifact" id="ca.ualberta.cs.serl.wikidev/Project#addRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addTicket" id="ca.ualberta.cs.serl.wikidev/Project#addTicket(Lca.ualberta.cs.serl.wikidev.artifacts.Ticket;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addUser" id="ca.ualberta.cs.serl.wikidev/Project#addUser(Lca.ualberta.cs.serl.wikidev.User;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addWiki" id="ca.ualberta.cs.serl.wikidev/Project#addWiki(Lca.ualberta.cs.serl.wikidev.artifacts.Wiki;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev/Project#compareTo(Lca.ualberta.cs.serl.wikidev.Project;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChangesets" id="ca.ualberta.cs.serl.wikidev/Project#getChangesets()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMessages" id="ca.ualberta.cs.serl.wikidev/Project#getMessages()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTickets" id="ca.ualberta.cs.serl.wikidev/Project#getTickets()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWikis" id="ca.ualberta.cs.serl.wikidev/Project#getWikis()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setChangesets" id="ca.ualberta.cs.serl.wikidev/Project#setChangesets(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMessages" id="ca.ualberta.cs.serl.wikidev/Project#setMessages(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTickets" id="ca.ualberta.cs.serl.wikidev/Project#setTickets(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWikis" id="ca.ualberta.cs.serl.wikidev/Project#setWikis(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev/Project#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@users+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.9" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="61,463" id="ca.ualberta.cs.serl.wikidev/User@users+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="users" location="60,0" id="ca.ualberta.cs.serl.wikidev/User@users+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/User#users" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - users" location="3271,2171" size="38,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3323,2171" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@managers+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.9" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="51,463" id="ca.ualberta.cs.serl.wikidev/User@managers+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="managers" location="0,5" id="ca.ualberta.cs.serl.wikidev/User@managers+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/User#managers" multiplicityLabel="//@children.5/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - managers" location="3191,2207" size="58,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3245,2179" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet@changesets+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.17" targetEnd="//@children.5/@sourceConnections.2/@children.2" label="//@children.5/@sourceConnections.2/@children.0" sourceEnd="//@children.5/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,453" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet@changesets+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="changesets" location="10,0" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet@changesets+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#changesets" multiplicityLabel="//@children.5/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - changesets" location="3947,2115" size="67,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3929,2115" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@developers+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.9" targetEnd="//@children.5/@sourceConnections.3/@children.2" label="//@children.5/@sourceConnections.3/@children.0" sourceEnd="//@children.5/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="101,463" id="ca.ualberta.cs.serl.wikidev/User@developers+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="developers" location="196,0" id="ca.ualberta.cs.serl.wikidev/User@developers+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/User#developers" multiplicityLabel="//@children.5/@sourceConnections.3/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.3/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - developers" location="3459,2171" size="64,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3441,2171" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Message@messages+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.15" targetEnd="//@children.5/@sourceConnections.4/@children.2" label="//@children.5/@sourceConnections.4/@children.0" sourceEnd="//@children.5/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,453" id="ca.ualberta.cs.serl.wikidev.artifacts/Message@messages+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="messages" location="10,0" id="ca.ualberta.cs.serl.wikidev.artifacts/Message@messages+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev.artifacts/Message#messages" multiplicityLabel="//@children.5/@sourceConnections.4/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.4/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - messages" location="4511,2115" size="60,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="4493,2115" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket@tickets+ca.ualberta.cs.serl.wikidev/Project@" source="//@children.5" target="//@children.19" targetEnd="//@children.5/@sourceConnections.5/@children.2" label="//@children.5/@sourceConnections.5/@children.0" sourceEnd="//@children.5/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,463" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket@tickets+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev/Project#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tickets" location="0,10" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket@tickets+ca.ualberta.cs.serl.wikidev/Project@|ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tickets" multiplicityLabel="//@children.5/@sourceConnections.5/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.5/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tickets" location="4176,2155" size="41,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="4213,2127" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev/RelationshipMiner@" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.6/@children.2" label="//@children.5/@sourceConnections.6/@children.0" sourceEnd="//@children.5/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="project" location="0,405" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/Project#project" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.6/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.6/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - project" location="3238,1555" size="43,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3263,1583" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,6" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/RelationshipMiner#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev.artifacts/Wiki@wikis" source="//@children.5" target="//@children.18" targetEnd="//@children.5/@sourceConnections.7/@children.2" label="//@children.5/@sourceConnections.7/@children.0" sourceEnd="//@children.5/@sourceConnections.7/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="project" location="158,463" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev.artifacts/Wiki@wikis|ca.ualberta.cs.serl.wikidev/Project#project" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.7/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.7/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - project" location="3398,1639" size="43,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3455,1639" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="wikis" location="16,0" id="ca.ualberta.cs.serl.wikidev/Project@project+ca.ualberta.cs.serl.wikidev.artifacts/Wiki@wikis|ca.ualberta.cs.serl.wikidev.artifacts/Wiki#wikis" multiplicityLabel="//@children.5/@sourceConnections.7/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.7/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + wikis" location="3711,2115" size="37,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3693,2115" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Wiki" source="//@children.5" target="//@children.18" targetEnd="//@children.5/@sourceConnections.8/@children.2" label="//@children.5/@sourceConnections.8/@children.0" sourceEnd="//@children.5/@sourceConnections.8/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,377" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.5" target="//@children.16" targetEnd="//@children.5/@sourceConnections.9/@children.2" label="//@children.5/@sourceConnections.9/@children.0" sourceEnd="//@children.5/@sourceConnections.9/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,448" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.5" target="//@children.9" targetEnd="//@children.5/@sourceConnections.10/@children.2" label="//@children.5/@sourceConnections.10/@children.0" sourceEnd="//@children.5/@sourceConnections.10/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,463" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="206,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" source="//@children.5" target="//@children.17" targetEnd="//@children.5/@sourceConnections.11/@children.2" label="//@children.5/@sourceConnections.11/@children.0" sourceEnd="//@children.5/@sourceConnections.11/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,463" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,21"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Ticket" source="//@children.5" target="//@children.19" targetEnd="//@children.5/@sourceConnections.12/@children.2" label="//@children.5/@sourceConnections.12/@children.0" sourceEnd="//@children.5/@sourceConnections.12/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,453" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Project-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Message" source="//@children.5" target="//@children.15" targetEnd="//@children.5/@sourceConnections.13/@children.2" label="//@children.5/@sourceConnections.13/@children.0" sourceEnd="//@children.5/@sourceConnections.13/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,463" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,21"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Printer" location="4890,1360" size="125,85" id="ca.ualberta.cs.serl.wikidev/Printer" runTimeClassModel="printVertice(Ljava.io.BufferedWriter;Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),printEverything(Ljava.util.ArrayList;[[DI)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,36">
+      <children xsi:type="editmodel:MethodEditModel" name="printEverything" id="ca.ualberta.cs.serl.wikidev/Printer#printEverything(Ljava.util.ArrayList;[[DI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printVertice" id="ca.ualberta.cs.serl.wikidev/Printer#printVertice(Ljava.io.BufferedWriter;Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Printer-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Wiki*ca.ualberta.cs.serl.wikidev/Printer-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Wiki" source="//@children.6" target="//@children.18" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="4,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,43"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Printer-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.6" target="//@children.16" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="4,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="182,53"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Printer-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Ticket*ca.ualberta.cs.serl.wikidev/Printer-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Ticket" source="//@children.6" target="//@children.19" targetEnd="//@children.6/@sourceConnections.2/@children.2" label="//@children.6/@sourceConnections.2/@children.0" sourceEnd="//@children.6/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="238,61"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Printer-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet*ca.ualberta.cs.serl.wikidev/Printer-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" source="//@children.6" target="//@children.17" targetEnd="//@children.6/@sourceConnections.3/@children.2" label="//@children.6/@sourceConnections.3/@children.0" sourceEnd="//@children.6/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="19,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="267,15"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Printer-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/Message*ca.ualberta.cs.serl.wikidev/Printer-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/Message" source="//@children.6" target="//@children.15" targetEnd="//@children.6/@sourceConnections.4/@children.2" label="//@children.6/@sourceConnections.4/@children.0" sourceEnd="//@children.6/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="43,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="140,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.2" name="Stemmer" location="50,571" size="131,193" id="ca.ualberta.cs.serl.wikidev/Stemmer" runTimeClassModel="main([Ljava.lang.String;),getResultBuffer(),stem(),add(C),getResultLength(),add([CI),Stemmer(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Stemmer" id="ca.ualberta.cs.serl.wikidev/Stemmer#Stemmer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="ca.ualberta.cs.serl.wikidev/Stemmer#add([CI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="ca.ualberta.cs.serl.wikidev/Stemmer#add(C)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getResultBuffer" id="ca.ualberta.cs.serl.wikidev/Stemmer#getResultBuffer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getResultLength" id="ca.ualberta.cs.serl.wikidev/Stemmer#getResultLength()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="ca.ualberta.cs.serl.wikidev/Stemmer#main([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stem" id="ca.ualberta.cs.serl.wikidev/Stemmer#stem()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev/Stemmer#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.8" name="MatrixOperator" location="2135,50" size="180,535" id="ca.ualberta.cs.serl.wikidev/MatrixOperator" runTimeClassModel="saveResults(Ljava.lang.String;[D[D[DDD),getFiedlerVector([[D),matrixProduct([[D[[D),transpose([[D),scaleVector([DD),identity(I),getColumnSum([[DI),vectorPower([DD),getHubVector([[D),getColumn([[DI),oneVector(I),getConnectedComponents(),getRowSum([[DI),scaleMatrix([[DD),setAdjacencyMatrix([[D),matrixVectorProduct([[D[D),getMean([D),getTotalSum([[D),vectorProduct([D[D),getEigenValues([[D),getMeanVector([[D),one(II),getEigenVectors([[D),normalizeVector([D),getAuthorityVector([[D),diagonal([D),getStandardDeviation([D)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,486">
+      <children xsi:type="editmodel:MethodEditModel" name="diagonal" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#diagonal([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAuthorityVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getAuthorityVector([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColumn" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getColumn([[DI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColumnSum" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getColumnSum([[DI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getConnectedComponents" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getConnectedComponents()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEigenValues" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getEigenValues([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEigenVectors" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getEigenVectors([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFiedlerVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getFiedlerVector([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHubVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getHubVector([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMean" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getMean([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMeanVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getMeanVector([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRowSum" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getRowSum([[DI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStandardDeviation" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getStandardDeviation([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTotalSum" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#getTotalSum([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="identity" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#identity(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="matrixProduct" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#matrixProduct([[D[[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="matrixVectorProduct" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#matrixVectorProduct([[D[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="normalizeVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#normalizeVector([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="one" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#one(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="oneVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#oneVector(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveResults" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#saveResults(Ljava.lang.String;[D[D[DDD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="scaleMatrix" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#scaleMatrix([[DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="scaleVector" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#scaleVector([DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAdjacencyMatrix" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#setAdjacencyMatrix([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="transpose" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#transpose([[D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="vectorPower" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#vectorPower([DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="vectorProduct" id="ca.ualberta.cs.serl.wikidev/MatrixOperator#vectorProduct([D[D)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.2 //@children.16/@sourceConnections.4 //@children.16/@sourceConnections.6 //@children.0/@sourceConnections.3 //@children.5/@sourceConnections.0 //@children.5/@sourceConnections.1 //@children.5/@sourceConnections.3 //@children.5/@sourceConnections.10 //@children.19/@sourceConnections.1 //@children.4/@sourceConnections.3" name="User" location="3257,2195" size="236,283" id="ca.ualberta.cs.serl.wikidev/User" runTimeClassModel="index,compareTo(Lca.ualberta.cs.serl.wikidev.User;),userRealName,aliases,addRelatedArtifacts(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;I),toString(),userID,User(Ljava.lang.String;),rolePerProject,rOLE_DEVELOPER,userName,rOLE_MANAGER,User(ILjava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="213,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="aliases" id="ca.ualberta.cs.serl.wikidev/User#aliases"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="index" id="ca.ualberta.cs.serl.wikidev/User#index"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rOLE_DEVELOPER" id="ca.ualberta.cs.serl.wikidev/User#rOLE_DEVELOPER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rOLE_MANAGER" id="ca.ualberta.cs.serl.wikidev/User#rOLE_MANAGER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rolePerProject" id="ca.ualberta.cs.serl.wikidev/User#rolePerProject"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="userID" id="ca.ualberta.cs.serl.wikidev/User#userID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="ca.ualberta.cs.serl.wikidev/User#userName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="userRealName" id="ca.ualberta.cs.serl.wikidev/User#userRealName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,90">
+      <children xsi:type="editmodel:MethodEditModel" name="User" id="ca.ualberta.cs.serl.wikidev/User#User(ILjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="User" id="ca.ualberta.cs.serl.wikidev/User#User(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addRelatedArtifacts" id="ca.ualberta.cs.serl.wikidev/User#addRelatedArtifacts(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev/User#compareTo(Lca.ualberta.cs.serl.wikidev.User;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev/User#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@usersChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@" source="//@children.9" target="//@children.4" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="usersChanged" location="0,10" id="ca.ualberta.cs.serl.wikidev/User@usersChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/User#usersChanged" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - usersChanged" location="3168,2211" size="81,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="3245,2183" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,211" id="ca.ualberta.cs.serl.wikidev/User@usersChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/RelationshipMiner#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@reporter+ca.ualberta.cs.serl.wikidev.artifacts/Ticket@" source="//@children.9" target="//@children.19" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="reporter" location="236,110" id="ca.ualberta.cs.serl.wikidev/User@reporter+ca.ualberta.cs.serl.wikidev.artifacts/Ticket@|ca.ualberta.cs.serl.wikidev/User#reporter" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - reporter" location="3499,2283" size="49,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3499,2311" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,177" id="ca.ualberta.cs.serl.wikidev/User@reporter+ca.ualberta.cs.serl.wikidev.artifacts/Ticket@|ca.ualberta.cs.serl.wikidev.artifacts/Ticket#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Project" source="//@children.9" target="//@children.5" targetEnd="//@children.9/@sourceConnections.2/@children.2" label="//@children.9/@sourceConnections.2/@children.0" sourceEnd="//@children.9/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,463"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.9" target="//@children.16" targetEnd="//@children.9/@sourceConnections.3/@children.2" label="//@children.9/@sourceConnections.3/@children.0" sourceEnd="//@children.9/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="251,10" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,237"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.6" name="TextParser" location="1201,1098" size="142,193" id="ca.ualberta.cs.serl.wikidev/TextParser" runTimeClassModel="TextParser(),calculateTFIDF(),parseFile(Ljava.io.File;),getFrequencies(),setFrequencies(),parseURL(Ljava.lang.String;),TextParser(Ljava.util.ArrayList;),parseTextInWords(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,144">
+      <children xsi:type="editmodel:MethodEditModel" name="TextParser" id="ca.ualberta.cs.serl.wikidev/TextParser#TextParser(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="TextParser" id="ca.ualberta.cs.serl.wikidev/TextParser#TextParser()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateTFIDF" id="ca.ualberta.cs.serl.wikidev/TextParser#calculateTFIDF()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFrequencies" id="ca.ualberta.cs.serl.wikidev/TextParser#getFrequencies()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseFile" id="ca.ualberta.cs.serl.wikidev/TextParser#parseFile(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseTextInWords" id="ca.ualberta.cs.serl.wikidev/TextParser#parseTextInWords(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseURL" id="ca.ualberta.cs.serl.wikidev/TextParser#parseURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFrequencies" id="ca.ualberta.cs.serl.wikidev/TextParser#setFrequencies()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/TextParser-Standard::Call->ca.ualberta.cs.serl.wikidev/Document*ca.ualberta.cs.serl.wikidev/TextParser-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Document" source="//@children.10" target="//@children.11" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,76" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,84"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/TextParser-Standard::Call->ca.ualberta.cs.serl.wikidev/Dictionary" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.1/@children.2" label="//@children.10/@sourceConnections.1/@children.0" sourceEnd="//@children.10/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="38,193" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/TextParser-Standard::Call->ca.ualberta.cs.serl.wikidev/Stemmer*ca.ualberta.cs.serl.wikidev/TextParser-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/Stemmer*ca.ualberta.cs.serl.wikidev/TextParser-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Stemmer" source="//@children.10" target="//@children.7" targetEnd="//@children.10/@sourceConnections.2/@children.2" label="//@children.10/@sourceConnections.2/@children.0" sourceEnd="//@children.10/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,64" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="131,126"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.3 //@children.16/@sourceConnections.7 //@children.4/@sourceConnections.2 //@children.10/@sourceConnections.0" name="Document" location="2607,739" size="106,139" id="ca.ualberta.cs.serl.wikidev/Document" runTimeClassModel="getTerms(),setTfidf(Ljava.util.TreeMap;),getTfidf(),contains(Ljava.lang.String;),Document(Ljava.util.Set;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Document" id="ca.ualberta.cs.serl.wikidev/Document#Document(Ljava.util.Set;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contains" id="ca.ualberta.cs.serl.wikidev/Document#contains(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTerms" id="ca.ualberta.cs.serl.wikidev/Document#getTerms()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTfidf" id="ca.ualberta.cs.serl.wikidev/Document#getTfidf()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTfidf" id="ca.ualberta.cs.serl.wikidev/Document#setTfidf(Ljava.util.TreeMap;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Document@documents+ca.ualberta.cs.serl.wikidev/RelationshipMiner@" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="documents" location="106,134" id="ca.ualberta.cs.serl.wikidev/Document@documents+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/Document#documents" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - documents" location="2719,851" size="63,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="2719,879" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="151,0" id="ca.ualberta.cs.serl.wikidev/Document@documents+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/RelationshipMiner#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.0 //@children.0/@sourceConnections.1 //@children.2/@sourceConnections.0 //@children.3/@sourceConnections.0" name="Cluster" location="3265,3274" size="152,265" id="ca.ualberta.cs.serl.wikidev/Cluster" runTimeClassModel="getArtifacts(),project,addArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),users,index,fromdate,addArtifacts(Ljava.util.ArrayList;),todate,getUsers(),getWords(),Cluster(),setUsersAndWords()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="fromdate" id="ca.ualberta.cs.serl.wikidev/Cluster#fromdate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="index" id="ca.ualberta.cs.serl.wikidev/Cluster#index"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="project" id="ca.ualberta.cs.serl.wikidev/Cluster#project"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="todate" id="ca.ualberta.cs.serl.wikidev/Cluster#todate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="users" id="ca.ualberta.cs.serl.wikidev/Cluster#users"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,126">
+      <children xsi:type="editmodel:MethodEditModel" name="Cluster" id="ca.ualberta.cs.serl.wikidev/Cluster#Cluster()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addArtifact" id="ca.ualberta.cs.serl.wikidev/Cluster#addArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addArtifacts" id="ca.ualberta.cs.serl.wikidev/Cluster#addArtifacts(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getArtifacts" id="ca.ualberta.cs.serl.wikidev/Cluster#getArtifacts()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUsers" id="ca.ualberta.cs.serl.wikidev/Cluster#getUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWords" id="ca.ualberta.cs.serl.wikidev/Cluster#getWords()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setUsersAndWords" id="ca.ualberta.cs.serl.wikidev/Cluster#setUsersAndWords()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifacts+ca.ualberta.cs.serl.wikidev/Cluster@" source="//@children.12" target="//@children.16" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="152,10" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifacts+ca.ualberta.cs.serl.wikidev/Cluster@|ca.ualberta.cs.serl.wikidev/Cluster#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="artifacts" location="10,243" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifacts+ca.ualberta.cs.serl.wikidev/Cluster@|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#artifacts" multiplicityLabel="//@children.12/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - artifacts" location="4119,2095" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="4101,2095" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Cluster-Standard::Call->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev/Cluster-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.12" target="//@children.16" targetEnd="//@children.12/@sourceConnections.1/@children.2" label="//@children.12/@sourceConnections.1/@children.0" sourceEnd="//@children.12/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,228"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Cluster-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.12" target="//@children.9" targetEnd="//@children.12/@sourceConnections.2/@children.2" label="//@children.12/@sourceConnections.2/@children.0" sourceEnd="//@children.12/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="75,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,283"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.14/@sourceConnections.1" name="Hierarchical" location="4138,3316" size="119,85" id="ca.ualberta.cs.serl.wikidev/Hierarchical" runTimeClassModel="clustering(Ljava.util.ArrayList;),Hierarchical([[DD)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Hierarchical" id="ca.ualberta.cs.serl.wikidev/Hierarchical#Hierarchical([[DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="clustering" id="ca.ualberta.cs.serl.wikidev/Hierarchical#clustering(Ljava.util.ArrayList;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Hierarchical-Standard::Call->ca.ualberta.cs.serl.wikidev/Cluster*ca.ualberta.cs.serl.wikidev/Hierarchical-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/Cluster*ca.ualberta.cs.serl.wikidev/Hierarchical-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Cluster" source="//@children.13" target="//@children.12" targetEnd="//@children.13/@sourceConnections.0/@children.2" label="//@children.13/@sourceConnections.0/@children.0" sourceEnd="//@children.13/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="152,84"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Hierarchical-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.13" target="//@children.16" targetEnd="//@children.13/@sourceConnections.1/@children.2" label="//@children.13/@sourceConnections.1/@children.0" sourceEnd="//@children.13/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="59,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,243"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Hierarchical-Standard::Derive->ca.ualberta.cs.serl.wikidev/Clustering" source="//@children.13" target="//@children.14" targetEnd="//@children.13/@sourceConnections.2/@children.2" label="//@children.13/@sourceConnections.2/@children.0" sourceEnd="//@children.13/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="59,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,121"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Clustering&lt;-ca.ualberta.cs.serl.wikidev/Hierarchical" source="//@children.13" target="//@children.14" targetEnd="//@children.13/@sourceConnections.3/@children.1" sourceEnd="//@children.13/@sourceConnections.3/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="39,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,121"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.2 //@children.13/@sourceConnections.3 //@children.2/@sourceConnections.2" name="Clustering" location="4120,3145" size="156,121" id="ca.ualberta.cs.serl.wikidev/Clustering" runTimeClassModel="clustering(Ljava.util.ArrayList;),toArrayList([D),getEuclideanDistance(Ljava.util.ArrayList;Ljava.util.ArrayList;),getInstance(I[[DD)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,72">
+      <children xsi:type="editmodel:MethodEditModel" name="clustering" id="ca.ualberta.cs.serl.wikidev/Clustering#clustering(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEuclideanDistance" id="ca.ualberta.cs.serl.wikidev/Clustering#getEuclideanDistance(Ljava.util.ArrayList;Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="ca.ualberta.cs.serl.wikidev/Clustering#getInstance(I[[DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toArrayList" id="ca.ualberta.cs.serl.wikidev/Clustering#toArrayList([D)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Clustering-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.14" target="//@children.16" targetEnd="//@children.14/@sourceConnections.0/@children.2" label="//@children.14/@sourceConnections.0/@children.0" sourceEnd="//@children.14/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,243"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Clustering-Standard::Instantiate->ca.ualberta.cs.serl.wikidev/Hierarchical" source="//@children.14" target="//@children.13" targetEnd="//@children.14/@sourceConnections.1/@children.2" label="//@children.14/@sourceConnections.1/@children.0" sourceEnd="//@children.14/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="61,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.6/@sourceConnections.4 //@children.5/@sourceConnections.4 //@children.5/@sourceConnections.13 //@children.4/@sourceConnections.1" name="Message" location="4495,2139" size="152,297" id="ca.ualberta.cs.serl.wikidev.artifacts/Message" runTimeClassModel="body,communicationID,Message(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IILjava.lang.String;ILjava.lang.String;Ljava.sql.Timestamp;Ljava.lang.String;Ljava.lang.String;),subject,deleted,toString(),user_name,author,address,project_id,getAssociatedUsers(),mid_header,compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,162">
+      <children xsi:type="editmodel:AttributeEditModel" name="address" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#address"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="author" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#author"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="body" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#body"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="communicationID" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#communicationID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="deleted" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#deleted"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mid_header" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#mid_header"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="project_id" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#project_id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subject" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#subject"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="user_name" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#user_name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Message" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#Message(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IILjava.lang.String;ILjava.lang.String;Ljava.sql.Timestamp;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAssociatedUsers" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#getAssociatedUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev.artifacts/Message#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Message-Standard::Derive->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev.artifacts/Message-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.15" target="//@children.16" targetEnd="//@children.15/@sourceConnections.0/@children.2" label="//@children.15/@sourceConnections.0/@children.0" sourceEnd="//@children.15/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive, Import»" size="78,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,83" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="182,198"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact&lt;-ca.ualberta.cs.serl.wikidev.artifacts/Message" source="//@children.15" target="//@children.18/@sourceConnections.2" targetEnd="//@children.15/@sourceConnections.1/@children.1" sourceEnd="//@children.15/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0 //@children.12/@sourceConnections.1 //@children.14/@sourceConnections.0 //@children.13/@sourceConnections.1 //@children.0/@sourceConnections.8 //@children.6/@sourceConnections.1 //@children.5/@sourceConnections.9 //@children.18/@sourceConnections.1 //@children.18/@sourceConnections.2 //@children.9/@sourceConnections.3 //@children.17/@sourceConnections.0 //@children.19/@sourceConnections.0 //@children.15/@sourceConnections.0 //@children.4/@sourceConnections.11" name="IArtifact" location="4103,1846" size="182,243" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" runTimeClassModel="timestamp,uid,index,getDirectlyRelatedArtifacts(),getRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),relatedArtifacts,addDirectlyRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;DLjava.lang.String;),url,toString(),containsRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="index" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#index"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="relatedArtifacts" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#relatedArtifacts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="timestamp" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#timestamp"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uid" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#uid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="url" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#url"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="159,90">
+      <children xsi:type="editmodel:MethodEditModel" name="addDirectlyRelatedArtifact" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#addDirectlyRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;DLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="containsRelatedArtifact" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#containsRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDirectlyRelatedArtifacts" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#getDirectlyRelatedArtifacts()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRelatedArtifact" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#getRelatedArtifact(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@relatedArtifacts+ca.ualberta.cs.serl.wikidev/Project@project" source="//@children.16" target="//@children.5" targetEnd="//@children.16/@sourceConnections.0/@children.2" label="//@children.16/@sourceConnections.0/@children.0" sourceEnd="//@children.16/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="relatedArtifacts" location="0,10" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@relatedArtifacts+ca.ualberta.cs.serl.wikidev/Project@project|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#relatedArtifacts" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - relatedArtifacts" location="4008,1863" size="85,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="4089,1835" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="project" location="153,463" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@relatedArtifacts+ca.ualberta.cs.serl.wikidev/Project@project|ca.ualberta.cs.serl.wikidev/Project#project" multiplicityLabel="//@children.16/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.16/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + project" location="3392,1639" size="45,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3451,1639" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifactsChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@" source="//@children.16" target="//@children.4" targetEnd="//@children.16/@sourceConnections.1/@children.2" label="//@children.16/@sourceConnections.1/@children.0" sourceEnd="//@children.16/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="artifactsChanged" location="0,10" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifactsChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#artifactsChanged" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - artifactsChanged" location="4000,1863" size="93,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="4089,1835" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,211" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@artifactsChanged+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/RelationshipMiner#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@sourceArtifact+ca.ualberta.cs.serl.wikidev/RelationshipMiner@" source="//@children.16" target="//@children.4" targetEnd="//@children.16/@sourceConnections.2/@children.2" label="//@children.16/@sourceConnections.2/@children.0" sourceEnd="//@children.16/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="sourceArtifact" location="92,0" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@sourceArtifact+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#sourceArtifact" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - sourceArtifact" location="4199,1823" size="80,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="4167,1823" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,201" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@sourceArtifact+ca.ualberta.cs.serl.wikidev/RelationshipMiner@|ca.ualberta.cs.serl.wikidev/RelationshipMiner#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/Document@document+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@" source="//@children.16" target="//@children.11" targetEnd="//@children.16/@sourceConnections.3/@children.2" label="//@children.16/@sourceConnections.3/@children.0" sourceEnd="//@children.16/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="ca.ualberta.cs.serl.wikidev/Document@document+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="document" location="96,139" id="ca.ualberta.cs.serl.wikidev/Document@document+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@|ca.ualberta.cs.serl.wikidev/Document#document" multiplicityLabel="//@children.16/@sourceConnections.3/@children.2/@children.1" roleLabel="//@children.16/@sourceConnections.3/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # document" location="2634,883" size="59,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="2707,883" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev/User@owner+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@" source="//@children.16" target="//@children.9" targetEnd="//@children.16/@sourceConnections.4/@children.2" label="//@children.16/@sourceConnections.4/@children.0" sourceEnd="//@children.16/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,233" id="ca.ualberta.cs.serl.wikidev/User@owner+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@|ca.ualberta.cs.serl.wikidev.artifacts/IArtifact#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="owner" location="226,0" id="ca.ualberta.cs.serl.wikidev/User@owner+ca.ualberta.cs.serl.wikidev.artifacts/IArtifact@|ca.ualberta.cs.serl.wikidev/User#owner" multiplicityLabel="//@children.16/@sourceConnections.4/@children.2/@children.1" roleLabel="//@children.16/@sourceConnections.4/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # owner" location="3429,2171" size="44,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3487,2171" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Project" source="//@children.16" target="//@children.5" targetEnd="//@children.16/@sourceConnections.5/@children.2" label="//@children.16/@sourceConnections.5/@children.0" sourceEnd="//@children.16/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,47" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,463"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.16" target="//@children.9" targetEnd="//@children.16/@sourceConnections.6/@children.2" label="//@children.16/@sourceConnections.6/@children.0" sourceEnd="//@children.16/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,213" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="165,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Document" source="//@children.16" target="//@children.11" targetEnd="//@children.16/@sourceConnections.7/@children.2" label="//@children.16/@sourceConnections.7/@children.0" sourceEnd="//@children.16/@sourceConnections.7/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="5,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="106,124"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.7 //@children.6/@sourceConnections.3 //@children.5/@sourceConnections.2 //@children.5/@sourceConnections.11 //@children.4/@sourceConnections.10" name="ChangeSet" location="3930,2139" size="267,297" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" runTimeClassModel="ChangeSet(ILjava.lang.String;Ljava.lang.String;ILjava.sql.Timestamp;II),getChangesetDetails(),setAuthorForChangeSetDetails(),changesetDetails,setChangesetDetails(Ljava.util.ArrayList;),changeSetID,toString(),revision,getAssociatedUsers(),externalAuthorUserName,externalSystemID,compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),comment">
+    <children xsi:type="editmodel:CompartmentEditModel" size="244,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="changeSetID" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#changeSetID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="changesetDetails" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#changesetDetails"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="comment" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#comment"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="externalAuthorUserName" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#externalAuthorUserName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="externalSystemID" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#externalSystemID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="revision" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#revision"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="179,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ChangeSet" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#ChangeSet(ILjava.lang.String;Ljava.lang.String;ILjava.sql.Timestamp;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAssociatedUsers" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#getAssociatedUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChangesetDetails" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#getChangesetDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAuthorForChangeSetDetails" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#setAuthorForChangeSetDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setChangesetDetails" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#setChangesetDetails(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet-Standard::Derive->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.17" target="//@children.16" targetEnd="//@children.17/@sourceConnections.0/@children.2" label="//@children.17/@sourceConnections.0/@children.0" sourceEnd="//@children.17/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive, Import»" size="78,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="219,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,243"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact&lt;-ca.ualberta.cs.serl.wikidev.artifacts/ChangeSet" source="//@children.17" target="//@children.18/@sourceConnections.2" targetEnd="//@children.17/@sourceConnections.1/@children.1" sourceEnd="//@children.17/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.4 //@children.6/@sourceConnections.0 //@children.5/@sourceConnections.7 //@children.5/@sourceConnections.8 //@children.4/@sourceConnections.5" name="Wiki" location="3691,2139" size="209,243" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki" runTimeClassModel="setRevisions(Ljava.util.ArrayList;),page_namespace_id,getRevisions(),getAssociatedUsers(),page_id,Wiki(IILjava.lang.String;),compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),revisions,toString(),page_title">
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="page_id" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#page_id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="page_namespace_id" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#page_namespace_id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="page_title" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#page_title"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="revisions" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#revisions"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,108">
+      <children xsi:type="editmodel:MethodEditModel" name="Wiki" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#Wiki(IILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAssociatedUsers" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#getAssociatedUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRevisions" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#getRevisions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRevisions" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#setRevisions(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki-Soyatec::Import->ca.ualberta.cs.serl.wikidev/Project" source="//@children.18" target="//@children.5" targetEnd="//@children.18/@sourceConnections.0/@children.2" label="//@children.18/@sourceConnections.0/@children.0" sourceEnd="//@children.18/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="44,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,397"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Wiki-Standard::Derive->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev.artifacts/Wiki-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.18" target="//@children.16" targetEnd="//@children.18/@sourceConnections.1/@children.2" label="//@children.18/@sourceConnections.1/@children.0" sourceEnd="//@children.18/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive, Import»" size="78,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,44" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,188"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.17/@sourceConnections.1 //@children.19/@sourceConnections.2 //@children.15/@sourceConnections.1" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact&lt;-ca.ualberta.cs.serl.wikidev.artifacts/Wiki" source="//@children.18" target="//@children.16" targetEnd="//@children.18/@sourceConnections.2/@children.1" sourceEnd="//@children.18/@sourceConnections.2/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,54" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,178" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.6 //@children.6/@sourceConnections.2 //@children.5/@sourceConnections.5 //@children.5/@sourceConnections.12 //@children.9/@sourceConnections.1 //@children.4/@sourceConnections.9" name="Ticket" location="4227,2139" size="238,513" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket" runTimeClassModel="summary,tICKET_STATUS_REJECTED,ticketChanges,toString(),tICKET_TYPE_ENHANCEMENT,dateOpened,setDr_id(I),compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;),tICKET_STATUS_COMPLETED,tICKET_STATUS_OPEN,ownerName,tICKET_TYPE_DEFECT,tICKET_TYPE_TASK,reporterName,getDr_id(),relatedUsers,tICKET_PRIORITY_HIGH,tICKET_PRIORITY_LOW,Ticket(Ljava.sql.Timestamp;Ljava.lang.String;Ljava.sql.Timestamp;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;III),ticketID,tICKET_PRIORITY_MEDIUM,getProjectID(),getAssociatedUsers(),desription,setProject_name(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="215,306">
+      <children xsi:type="editmodel:AttributeEditModel" name="dateOpened" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#dateOpened"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="desription" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#desription"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ownerName" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#ownerName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="relatedUsers" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#relatedUsers"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="reporterName" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#reporterName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="summary" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#summary"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_PRIORITY_HIGH" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_PRIORITY_HIGH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_PRIORITY_LOW" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_PRIORITY_LOW"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_PRIORITY_MEDIUM" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_PRIORITY_MEDIUM"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_STATUS_COMPLETED" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_STATUS_COMPLETED"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_STATUS_OPEN" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_STATUS_OPEN"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_STATUS_REJECTED" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_STATUS_REJECTED"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_TYPE_DEFECT" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_TYPE_DEFECT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_TYPE_ENHANCEMENT" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_TYPE_ENHANCEMENT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tICKET_TYPE_TASK" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#tICKET_TYPE_TASK"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ticketChanges" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#ticketChanges"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ticketID" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#ticketID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Ticket" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#Ticket(Ljava.sql.Timestamp;Ljava.lang.String;Ljava.sql.Timestamp;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#compareTo(Lca.ualberta.cs.serl.wikidev.artifacts.IArtifact;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAssociatedUsers" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#getAssociatedUsers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDr_id" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#getDr_id()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProjectID" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#getProjectID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDr_id" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#setDr_id(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setProject_name" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#setProject_name(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket-Standard::Derive->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact*ca.ualberta.cs.serl.wikidev.artifacts/Ticket-Soyatec::Import->ca.ualberta.cs.serl.wikidev.artifacts/IArtifact" source="//@children.19" target="//@children.16" targetEnd="//@children.19/@sourceConnections.0/@children.2" label="//@children.19/@sourceConnections.0/@children.0" sourceEnd="//@children.19/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive, Import»" size="78,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="28,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="152,243"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/Ticket-Soyatec::Import->ca.ualberta.cs.serl.wikidev/User" source="//@children.19" target="//@children.9" targetEnd="//@children.19/@sourceConnections.1/@children.2" label="//@children.19/@sourceConnections.1/@children.0" sourceEnd="//@children.19/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,197" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="236,141"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ca.ualberta.cs.serl.wikidev.artifacts/IArtifact&lt;-ca.ualberta.cs.serl.wikidev.artifacts/Ticket" source="//@children.19" target="//@children.18/@sourceConnections.2" targetEnd="//@children.19/@sourceConnections.2/@children.1" sourceEnd="//@children.19/@sourceConnections.2/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
