@@ -32,8 +32,8 @@ An IntelliJ IDEA plugin that recommends Extract Function refactoring based on th
 
 ## Plugin installation
 
-1. Download an archive with the plugin [here](plugin/llm-refactoring-plugin.zip).
-2. Open IntelliJ IDEA, go to `Settings-> Plugins-> Install plugin from disk` and select `llm-refactoring-plugin.zip`.
+1. Download an archive with the plugin [here](plugin/).
+2. Open IntelliJ IDEA, go to `Settings-> Plugins-> Install plugin from disk` and select `llm-extract-function.zip`.
 3. Restart IntelliJ IDEA.
 
 ## Usage example
