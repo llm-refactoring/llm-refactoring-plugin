@@ -10,6 +10,7 @@ This repository contains an archive with IntelliJ IDEA plugin, installation and 
 - [OpenAI key configuration](#openai-key-configuration)
 - [Plugin installation](#plugin-installation)
 - [Usage example](#usage-example)
+- [Prompt example](#prompt-example)
 - [Datasets](#datasets)
 - [Developer Survey](#developer-survey)
 
