@@ -48,6 +48,229 @@ the corresponding code for extraction will be highlighted.
 To choose one of the suggestions, just right-click on it, and the plugin will automatically apply extract function
 refactoring.
 
+## Prompt example
+Below you can find a sample prompt structure:
+
+```java
+OpenAiChatMessage(
+   "system",
+   """
+           You are a skilled software developer. You have immense knowledge on software refactoring.
+           You communicate with a remote server that sends you code of functions (one function in a message) that it wants to simplify by applying extract method refactoring.
+           In return, you send a JSON object with suggestions of helpful extract method refactorings. It is important for suggestions to not contain the entire function body.
+           Each suggestion consists of the start line, end line, and name for the extracted function.
+           The JSON should have the following format: [{"function_name": <new function name>, "line_start": <line start>, "line_end": <line end>}, ..., ].
+           """.trimIndent()
+),
+OpenAiChatMessage(
+   "user",
+   """
+   280. public void connect(Figure figure) {
+   281.     if (fObservedFigure != null)
+   282.         fObservedFigure.removeFigureChangeListener(this);
+   283.
+   284.     fObservedFigure = figure;
+   285.     fLocator = new OffsetLocator(figure.connectedTextLocator(this));
+   286.     fObservedFigure.addFigureChangeListener(this);
+   287.     if (fLocator != null) {
+   288.         Point p = fLocator.locate(fObservedFigure);
+   289.         p.x -= size().width/2 + fOriginX;
+   290.         p.y -= size().height/2 + fOriginY;
+   291.    
+   292.         if (p.x != 0 || p.y != 0) {
+   293.             willChange();
+   294.             basicMoveBy(p.x, p.y);
+   295.             changed();
+   296.         }
+   297.     }
+   298. }
+""".trimIndent()
+),
+OpenAiChatMessage(
+   "assistant",
+   """
+           [
+           {"function_name":  "updateLocator", "line_start":  288, "line_end": 296}
+           ]
+           """.trimIndent()
+),
+OpenAiChatMessage(
+   "user",
+   """
+   92.  public void mouseUp(MouseEvent e, int x, int y) {
+   93.      if (e.isPopupTrigger()) {
+   94.          Figure figure = drawing().findFigure(e.getX(), e.getY());
+   95.          if (figure != null) {
+   96.              Object attribute = figure.getAttribute(Figure.POPUP_MENU);
+   97.              if (attribute == null) {
+   98.                  figure = drawing().findFigureInside(e.getX(), e.getY());
+   99.              }
+   100.             if (figure != null) {
+   101.                 showPopupMenu(figure, e.getX(), e.getY(), e.getComponent());
+   102.             }
+   103.         }
+   104.     }
+   105.     else if (e.getClickCount() == 2) {
+   106.         handleMouseDoubleClick(e, x, y);
+   107.     }
+   108.     else {
+   109.         super.mouseUp(e, x, y);
+   110.         handleMouseUp(e, x, y);
+   111.         handleMouseClick(e, x, y);
+   112.     }
+   113. }
+""".trimIndent()
+),
+OpenAiChatMessage(
+   "assistant",
+   """
+           [
+           {"function_name":  "computeFigure", "line_start":  94, "line_end": 103},
+           {"function_name":  "computeAttribute", "line_start":  96, "line_end": 102}
+           ]
+           """.trimIndent()
+),
+OpenAiChatMessage(
+   "user",
+   codeSnippet
+)
+```
+
+Here's an actual example of a prompt used:
+
+```bash
+2023-10-12 11:30:35,883 [2976602]   INFO - #c.i.m.l.t.models - Sending request to OpenAI API with model=gpt-3.5-turbo and
+
+messages=[OpenAiChatMessage(role=system, content=You are a skilled software developer. You have immense knowledge on software refactoring.
+You communicate with a remote server that sends you code of functions (one function in a message) that it wants to simplify by applying extract method refactoring.
+
+In return, you send a JSON object with suggestions of helpful extract method refactorings. It is important for suggestions to not contain the entire function body.
+Each suggestion consists of the start line, end line, and name for the extracted function.
+The JSON should have the following format: [{"function_name": <new function name>, "line_start": <line start>, "line_end": <line end>}, ..., ].),
+
+OpenAiChatMessage(role=user, content=
+280. public void connect(Figure figure) {
+281. 	if (fObservedFigure != null)
+282.     	fObservedFigure.removeFigureChangeListener(this);
+283.
+284. 	fObservedFigure = figure;
+285. 	fLocator = new OffsetLocator(figure.connectedTextLocator(this));
+286. 	fObservedFigure.addFigureChangeListener(this);
+287. 	if (fLocator != null) {
+288.     	Point p = fLocator.locate(fObservedFigure);
+289.     	p.x -= size().width/2 + fOriginX;
+290.     	p.y -= size().height/2 + fOriginY;
+291.
+292.     	if (p.x != 0 || p.y != 0) {
+293.         	willChange();
+294.         	basicMoveBy(p.x, p.y);
+295.         	changed();
+296.     	}
+297. 	}
+298. }),
+
+OpenAiChatMessage(role=assistant, content=[
+{"function_name":  "updateLocator", "line_start":  288, "line_end": 296}
+]), OpenAiChatMessage(role=user, content=
+
+92.  public void mouseUp(MouseEvent e, int x, int y) {
+93.  	if (e.isPopupTrigger()) {
+94.      	Figure figure = drawing().findFigure(e.getX(), e.getY());
+95.      	if (figure != null) {
+96.          	Object attribute = figure.getAttribute(Figure.POPUP_MENU);
+97.          	if (attribute == null) {
+98.              	figure = drawing().findFigureInside(e.getX(), e.getY());
+99.          	}
+100.         	if (figure != null) {
+101.             	showPopupMenu(figure, e.getX(), e.getY(), e.getComponent());
+102.         	}
+103.     	}
+104. 	}
+105. 	else if (e.getClickCount() == 2) {
+106.     	handleMouseDoubleClick(e, x, y);
+107. 	}
+108. 	else {
+109.     	super.mouseUp(e, x, y);
+110.     	handleMouseUp(e, x, y);
+111.     	handleMouseClick(e, x, y);
+112. 	}
+113. }), OpenAiChatMessage(role=assistant, content=[
+{"function_name":  "computeFigure", "line_start":  94, "line_end": 103},
+{"function_name":  "computeAttribute", "line_start":  96, "line_end": 102}
+]), OpenAiChatMessage(role=user, content=
+
+63. static void writeJvmClass(JvmClass jvmClass, DataOutput out) throws IOException {
+64. 	writeJVMClassNode(jvmClass, out);
+65. 	out.writeUTF(jvmClass.getSuperFqName());
+66. 	out.writeUTF(jvmClass.getOuterFqName());
+67. 	//  Write myInterfaces;
+68. 	int interfacesCount = 0;
+69. 	for (String myInterface : jvmClass.getInterfaces()) {
+70.   	interfacesCount++;
+71. 	}
+72. 	DataInputOutputUtil.writeINT(out, interfacesCount);
+73. 	for (String myInterface : jvmClass.getInterfaces()) {
+74.   	out.writeUTF(myInterface);
+75. 	}
+76. 	//  Write myFields
+77. 	int fieldsCount = 0;
+78. 	for (JvmField field : jvmClass.getFields()) fieldsCount++;
+79. 	DataInputOutputUtil.writeINT(out, fieldsCount);
+80. 	for (JvmField field : jvmClass.getFields()) {
+81.   	writeJvmField(field, out);
+82. 	}
+83.
+84. 	//  Write myMethods
+85. 	int methodCount = 0;
+86. 	for (JvmMethod jvmMethod : jvmClass.getMethods()) methodCount++;
+87. 	DataInputOutputUtil.writeINT(out, methodCount);
+88. 	for (JvmMethod jvmMethod : jvmClass.getMethods()) {
+89.   	writeJvmMethod(jvmMethod, out);
+90. 	}
+91.
+92. 	//  Write AnnotationTargets
+93. 	int elemTypeCount = 0;
+94. 	for (ElemType elemType : jvmClass.getAnnotationTargets()) elemTypeCount++;
+95. 	DataInputOutputUtil.writeINT(out, elemTypeCount);
+96. 	for (ElemType elemType : jvmClass.getAnnotationTargets()) {
+97.   	writeElemType(elemType, out);
+98. 	}
+99.
+100. 	if (jvmClass.getRetentionPolicy() != null) {
+101.   	out.writeUTF(jvmClass.getRetentionPolicy().name());
+102. 	}
+103. 	else {
+104.   	out.writeUTF("");
+105. 	}
+106.   })]
+2023-10-12 11:30:39,250 [2979969]   INFO - #c.i.m.llm - Raw response:
+{
+  "id": "chatcmpl-88ss0b30S6ZiMDQ24ImloFrYjVrEy",
+  "object": "chat.completion",
+  "created": 1697128236,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+	{
+  	"index": 0,
+  	"message": {
+    	"role": "assistant",
+    	"content": "[\n
+{\"function_name\":  \"writeInterfaces\", \"line_start\":  69, \"line_end\": 75},\n
+{\"function_name\":  \"writeFields\", \"line_start\":  78, \"line_end\": 82},\n
+{\"function_name\":  \"writeMethods\", \"line_start\":  86, \"line_end\": 90},\n
+{\"function_name\":  \"writeAnnotationTargets\", \"line_start\":  94, \"line_end\": 98}\n]"
+  	},
+  	"finish_reason": "stop"
+	}
+  ],
+  "usage": {
+	"prompt_tokens": 1116,
+	"completion_tokens": 99,
+	"total_tokens": 1215
+  }
+}
+```
+
 # Datasets
 
 Datasets are accessible via the provided [link](https://github.com/llm-refactoring/llm-refactoring-plugin/tree/main/datasets).
