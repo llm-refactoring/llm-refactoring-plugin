@@ -18,6 +18,8 @@ This repository contains an archive with IntelliJ IDEA plugin, installation and 
 
 An IntelliJ IDEA plugin that recommends Extract Function refactoring based on the LLM's suggestions.
 
+The plugin is [available for free](https://plugins.jetbrains.com/plugin/23403-llm-powered-extract-method) on JetBrains Marketplace.
+
 <img src="pictures/tool-overview.png" alt="Code Diff" width="600">
 
 ## Requirements
