@@ -35,9 +35,7 @@ The plugin is [available for free](https://plugins.jetbrains.com/plugin/23403-ll
 
 ## Plugin installation
 
-1. Download an archive with the plugin [here](plugin/).
-2. Open IntelliJ IDEA, go to `Settings-> Plugins-> Install plugin from disk` and select `llm-extract-function.zip`.
-3. Restart IntelliJ IDEA.
+[Install the EM-Assist plugin](https://plugins.jetbrains.com/plugin/23403-llm-powered-extract-method) from JetBrains Marketplace.
 
 ## Usage example
 
