@@ -278,30 +278,25 @@ Datasets are accessible via the provided [link](https://github.com/llm-refactori
 
 To validate our technique, we used the following datasets:
 
-1. _Community Corpus-A_ consists of **122** Java methods and their corresponding Extract Method refactorings collected
+1. _Community Corpus_ consists of **122** Java methods and their corresponding Extract Method refactorings collected
    from
    five open-source repositories: MyWebMart, SelfPlanner, WikiDev, JHotDraw, and JUnit.
    This dataset previously served as the foundation for evaluating various state-of-the-art Extract Method refactoring
    automation tools, including JExtract, JDeodorant, SEMI, GEMS, and REMS.
 
-2. _Community Corpus-B_ Silva et al. maintain an active corpus containing 448 Java methods, each accompanied by its
-   respective extract method refactorings that open-source developers actually performed.Automatable changes represent
-   “clean”
-   commits in which the developers made a single type of change, i.e., performed Extract Method refactoring. We chose
-   the
-   latter category as our focus is on replicating the exact development scenarios where our tool only performs
-   refactorings,
-   it does not expand the code functionality. This resulted in **154** replicable refactorings.
-
-3. _Extended Corpus_: To enhance the robustness of our evaluation with a sizable oracle of actual refactorings performed
-   by
-   developers, we constructed Extended Corpus. To create it, we employed RefactoringMiner for detecting _Extract
-   Method_.
-   We ran it on highly regarded open-source repositories: IntelliJ Community Edition, and CoreNLP. After filtering to
-   remove
-   refactoring commits that mixed feature additions (the one-liners and the extracted methods whose body overlapped a
-   large
-   proportion of the host method), we retain **2,849** _Extract Methods_ from these repositories.
+2. _Extended Corpus_: To enhance the robustness of our evaluation with a sizable oracle of
+actual refactorings performed
+by
+developers, we constructed Extended Corpus. To create it, we employed RefactoringMiner for
+detecting _Extract
+Method_.
+We ran it on 12 highly regarded open-source repositories: CoreNLP, infinispan, HtmlUnit, robovm, google/guava, mbassador, spring-boot, google/gson, smart-doc, bytes-java, apache/datasketches-java, javaparser. After filtering to
+remove
+refactoring commits that mixed feature additions (the one-liners and the extracted methods
+whose body overlapped a
+large
+proportion of the host method), we retain **1752** _Extract Methods_ from these
+repositories.
 
 ## Dataset Details
 
@@ -331,60 +326,22 @@ throughout the evaluation process.
 
 #### LLM raw data
 
-Our study involved querying multiple LLMs with various temperatures. This LLM raw data was saved and further used for
-answering RQ1, RQ2, and RQ3. This raw data can be found in the attribute _"llm_multishot_data"_.
+Our study involved querying multiple LLMs with various temperatures. This LLM response data was saved and further used for
+answering RQ1, RQ2, and RQ3. This data can be found in the attribute _"response_extracted"_.
 For example:
 
 ```json
 {
   ...
   "llm_multishot_data": {
-    "temperature_1.0": [
+    "temperature_<temperature_value>": [
       {
-        "llm_raw_response": "{"
-        id
-        ":"
-        chatcmpl-7yUWi6uhbWG8V9CynMFe2mKW7crc6
-        ","
-        object
-        ":"
-        chat.completion
-        ","
-        created
-        ":1694651380,"
-        choices
-        ":[{"
-        index
-        ":0,"
-        message
-        ":{"
-        role
-        ":"
-        assistant
-        ","
-        content
-        ":"
-      [
-        \
-      n
-      {
-        \
-      "function_name\":  \"extractMethod\", \"line_start\":  442, \"line_end\": 443}\n]"
-      },
-      "finish_reason"
-      :
-      "stop"
+        "response_extracted": "[{\"function_name\":  \"extractedMethodName\", \"line_start\":  442, \"line_end\": 443}\n]", 
+        "shot_no": 0
       }
     ],
-    "usage": {
-      "prompt_tokens": 764,
-      "completion_tokens": 26,
-      "total_tokens": 790
-    }
+     ...
   }
-  ",
-  "llm_processing_time": 1397,
-  "shot_no": 1
 }
 ...
 ]
@@ -404,18 +361,20 @@ we used the data stored in the _"jetgpt_ranking"_ property as shown in the follo
   ...
   "jetgpt_ranking": {
     "llm_multishot_data": {
-      "temperature_1.0": {
-        "rank_by_popularity_times_heat": [
-          {
-            "candidate_type": "AS_IS",
-            "application_result": "OK",
-            "line_start": 612,
-            "line_end": 630,
-            ...
-          }
-        ],
-        ...
-      }
+       "<HEURISTICS_KEY>": {
+         "temperature_<temperature_value>": {
+           "rank_by_popularity_times_heat": [
+             {
+               "candidate_type": "AS_IS",
+               "application_result": "OK",
+               "line_start": 612,
+               "line_end": 630,
+               ...
+             }
+           ],
+           ...
+         }
+       }
     }
   },
   ...
@@ -432,7 +391,7 @@ _"suggestion_evaluation"_ JSON attribute:
   ...
   "suggestion_evaluation": {
     "llm_multishot_data": {
-      "temperature_1.0": [
+      "temperature_<temperature_value>": [
         {
           "candidate_type": "AS_IS",
           "application_result": "OK",
@@ -446,23 +405,22 @@ _"suggestion_evaluation"_ JSON attribute:
 }
 ```
 
-#### LiveREF execution data
+#### J-Extract execution data
 
-To further strengthen the validity of our results, we applied EM-Assist on the _Extended Corpus_ that includes 2,849
+To further strengthen the validity of our results, we applied EM-Assist on the _Extended Corpus_ that includes 1752
 actual
-refactorings from open-source projects. We applied the most recent tool LiveRef, to the same dataset. The raw data for
-LiveREF results is stored in the _"liveref_analysis"_ JSON attribute:
+refactorings from open-source projects. We applied the previous best in class static analysis tool J-Extract, to the same dataset. The raw data for
+J-Extract results is stored in the _"jextract_analysis"_ JSON attribute:
 
 ```json
 {
   ...
-  "liveref_analysis": {
-    "rank_by_size": [
+  "jextract_analysis": {
+    "candidates": [
       {
         "line_start": 274,
         "line_end": 276,
-        "length": 3,
-        ...
+        "length": 3
       }
     ]
   },
