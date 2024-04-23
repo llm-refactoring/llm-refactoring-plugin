@@ -354,13 +354,14 @@ For example:
 Suggestions coming from LLMs are transformed into candidates by our tool. The data used to answer **RQ3: How effective
 is
 EM-Assist in providing refactoring recommendations over existing approaches?**
-we used the data stored in the _"jetgpt_ranking"_ property as shown in the following example:
+we used the data stored in the _"jetgpt_ranking_samples"_ property as shown in the example below. 
+There are 30 objects corresponding to 30 random samples of the LLM data. We report averages over these samples.
 
 ```json
 {
   ...
-  "jetgpt_ranking": {
-    "llm_multishot_data": {
+  "jetgpt_ranking_samples": [
+     {
        "<HEURISTICS_KEY>": {
          "temperature_<temperature_value>": {
            "rank_by_popularity_times_heat": [
@@ -375,8 +376,9 @@ we used the data stored in the _"jetgpt_ranking"_ property as shown in the follo
            ...
          }
        }
-    }
-  },
+     },
+     ...
+  ],
   ...
 }
 ```
@@ -410,12 +412,12 @@ _"suggestion_evaluation"_ JSON attribute:
 To further strengthen the validity of our results, we applied EM-Assist on the _Extended Corpus_ that includes 1752
 actual
 refactorings from open-source projects. We applied the previous best in class static analysis tool J-Extract, to the same dataset. The raw data for
-J-Extract results is stored in the _"jextract_analysis"_ JSON attribute:
+J-Extract results is stored in the _"jextract_result"_ JSON attribute:
 
 ```json
 {
   ...
-  "jextract_analysis": {
+  "jextract_result": {
     "candidates": [
       {
         "line_start": 274,
