@@ -278,7 +278,7 @@ Datasets are accessible via the provided [link](https://github.com/llm-refactori
 
 To validate our technique, we used the following datasets:
 
-1. _Community Corpus_ consists of **122** Java methods and their corresponding Extract Method refactorings collected
+1. [_Community Corpus_]((datasets/corpora/community_corpus)) consists of **122** Java methods and their corresponding Extract Method refactorings collected
    from
    five open-source repositories: MyWebMart, SelfPlanner, WikiDev, JHotDraw, and JUnit.
    This dataset previously served as the foundation for evaluating various state-of-the-art Extract Method refactoring
