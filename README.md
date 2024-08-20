@@ -284,7 +284,7 @@ To validate our technique, we used the following datasets:
    This dataset previously served as the foundation for evaluating various state-of-the-art Extract Method refactoring
    automation tools, including JExtract, JDeodorant, SEMI, GEMS, and REMS.
 
-2. _Extended Corpus_: To enhance the robustness of our evaluation with a sizable oracle of
+2. [_Extended Corpus_](https://github.com/Abhiram98/llm-refactoring-plugin/blob/main/datasets/corpora/extended_corpus/extended_corpus.zip): To enhance the robustness of our evaluation with a sizable oracle of
 actual refactorings performed
 by
 developers, we constructed Extended Corpus. To create it, we employed RefactoringMiner for
